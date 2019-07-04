@@ -30,3 +30,10 @@ print("Cadena cortada:")
 nueva_lista = ls_ab[0:40:2]
 print(nueva_lista)
 
+
+n_cad = "asdasdasdasd"
+print("\ncortando cadena '"+n_cad+"' en posiciones 2,5")
+print(n_cad[2:5])
+
+print("\nverificando la existencia de hola en la cadena '"+n_cad+"'")
+print("hola" in n_cad)
