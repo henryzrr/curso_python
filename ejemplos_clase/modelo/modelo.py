@@ -1,7 +1,7 @@
 from sqlalchemy import MetaData, Table, Column, String, Integer, Numeric
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import Session
-from conexion import Database
+from .conexion import Database
 
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import relationship
@@ -63,7 +63,7 @@ class Venta(Base):
     cantidad = Column(Integer)
     product = relationship("Product", back_populates="venta")
 
-Product()
+
 """
 
 from avances.gui.modelo.modelo import Base
