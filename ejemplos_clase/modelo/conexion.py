@@ -4,7 +4,7 @@ class Database:
 
     def __init__(self):
         # self.engine = db.create_engine('postgresql://rpython:rpython@localhost:5432/guipython')
-        self.engine = db.create_engine('postgresql://postgres:postgres@localhost:5432/prueba2')
+        self.engine = db.create_engine('postgresql://postgres:postgres@localhost:5432/prueba')
         self.connection = self.engine.connect()
 
     def __new__(cls, *args, **kwargs):
