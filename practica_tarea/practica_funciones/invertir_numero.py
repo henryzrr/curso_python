@@ -25,7 +25,18 @@ def get_numero():
     return numero
 
 def invertir_como_num(n):
-    int n=1;
+    ni = 0
+    while n>0:
+        aux = n%10
+        ni = (ni*10)+aux
+        n=n//10
+    return ni
+
+def invertir_como_num_recursivo(n):
+    if n>0:
+        return (invertir_como_num_recursivo(n/10)*10)+n%10
+    else:
+        return 1
 
 def invertir_numero():
     num = get_numero()
@@ -39,9 +50,12 @@ def invertir_numero():
     print(invertir2(num))
     print("\nEl numero invertido con la funcion 3 (recursiva) es:")
     print(invertir_recursivo(num,0,len(num)))
-    print("-------- NUMERO TRATADO COMO NUMERO -----\n")
+    print("\n-------- NUMERO TRATADO COMO NUMERO -----\n")
     num = int(num)
     print("\nEl numero invertido con la funcion 4 es:")
-    print(invertir_como_num(num,0,len(num)))
+    print(invertir_como_num(num))
+    print("\nEl numero invertido con la funcion 5 (recursiva) es:")
+    print(invertir_como_num(num))
+
 
 invertir_numero()
