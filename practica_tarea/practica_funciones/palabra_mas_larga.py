@@ -1,7 +1,7 @@
-palabra1 = input("Ingrese palabra1:\n")
-palabra2= input("Ingrese palabra2:\n")
+palabra1 = input("Ingrese palabra1: ")
+palabra2 = input("Ingrese palabra2: ")
 
-def get_diferencia():
+def get_diferencia(palabra1,palabra2):
     tam1 = len(palabra1)
     tam2 = len(palabra2)
 
@@ -9,7 +9,8 @@ def get_diferencia():
     if tam1>tam2:
         tam_dif = tam1-tam2  
     else:
-        palabra1,palabra2 = palabra2,palabra1
+        palabra1,palabra2=palabra2,palabra1
         tam_dif = tam2-tam1
-    print(palabra1)
-    print("La palabra %s tiene %i mas que %s." % (palabra1,tam_dif,palabra2))
+    print("La palabra %s tiene %i letras mas que %s." % (palabra1,tam_dif,palabra2))
+
+get_diferencia(palabra1,palabra2)
