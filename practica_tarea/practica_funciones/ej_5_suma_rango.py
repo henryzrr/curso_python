@@ -1,3 +1,4 @@
+# ok
 num1 = int(input("Ingrese num 1: "))
 num2 = int(input("Ingrese num 2: "))
 
