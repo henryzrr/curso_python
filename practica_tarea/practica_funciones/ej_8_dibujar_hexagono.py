@@ -1,3 +1,4 @@
+# ok
 lado = int(input("Ingrese tamaño: "))
 ciclo = (lado*2)-1
 espacio=lado-1
