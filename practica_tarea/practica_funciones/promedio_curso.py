@@ -1,3 +1,4 @@
+#ok
 import functools
 from random import randint
 def promedio1(ls):
